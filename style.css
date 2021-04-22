@@ -1,0 +1,392 @@
+/* Шрифты */
+@import 'fonts/fonts.css';
+@import 'bs-icons/font/bootstrap-icons.css';
+
+/* Общие стили */
+
+body{
+  background-color: white;
+
+  padding: 0;
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  font-weight: 600;
+  font-size: 35px;
+  color: black;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+
+h2::before{
+  content: '';
+  border-left: #FE7B5D solid;
+  border-width: 3px;
+  margin-right: 10px;
+}
+
+h4{
+  font-size: 55.5px;
+  font-weight: 300;
+}
+
+h5{
+  font-size: 24px;
+  font-weight: 300;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+
+  transition: 0.6s;
+}
+
+a:hover{
+  color: #FE7B5D;
+}
+
+.color-black{
+  color: black;
+}
+
+.color-white{
+  color: white;
+}
+
+/* Навигационная панель */
+.navbar-Mazano{
+  margin-top: 47.5px;
+  margin-bottom: 47.5px;
+}
+
+
+.nav-line{
+  font-weight: 600;
+  color: black;
+}
+
+.nav-line{
+  position: relative;
+}
+
+.nav-line::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FE7B5D;
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-line:hover::before {
+  color: black;
+  transform: translate(-50%, 0) scaleX(1);
+}
+
+.nav-line:hover{
+  color: black;
+}
+
+.btn-hamburger{
+  border:none;
+  padding: 0;
+  background: none;
+  color: #EAEAEA;
+}
+
+/* Иконки */
+.header-icons{
+  font-size: 25px;
+}
+
+.bi-list{
+  font-size: 25px;
+  color: black;
+}
+
+/* Слайдер */
+.carousel-text-block-inner{
+  color: black;
+}
+
+/* Текст слайдера */
+.carousel-caption{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  padding-left: 10px;
+}
+
+/* Кнопки слайдера */
+.bi-arrow-left-circle,
+.bi-arrow-right-circle{
+  font-size: 50px;
+  transition: 0.6s;
+  color: black;
+}
+
+.bi-arrow-left-circle:hover,
+.bi-arrow-right-circle:hover{
+  color: #FE7B5D;
+}
+
+.btn-outline-primary{
+  color: #FE7B5D;
+  border-color: #FE7B5D;
+  border-width: 3px;
+  padding: 15px 60px 15px 60px;
+}
+
+.btn-outline-primary:hover{
+  background-color: #FE7B5D;
+  border-color: #FE7B5D;
+}
+
+/* Выделение кнопки */
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-outline-primary:focus {
+  box-shadow: none;
+}
+
+.btn-outline-primary:active {
+  background-color: #FE7B5D;
+  border-color: #FE7B5D;
+}
+
+.btn-outline-primary:active:focus {
+  box-shadow: 0 0 0 0.25rem #FE7B5D;
+}
+
+/* Навигационная панель меню */
+.navbar-featured{
+  background-color: #F9F9F9;
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+
+.btn-show-all{
+  font-weight: 600;
+  background-color: white;
+  color:#FE7B5D;
+  border: 3px #FE7B5D solid;
+  padding: 15px 25px 15px 25px;
+  transition: 0.3s;
+}
+
+.btn-show-all:hover{
+  background-color: #FE7B5D;
+  color: white;
+}
+
+.card{
+  border: none;
+  font-weight: 600;
+}
+
+.product:hover{
+  color: black;
+}
+
+.price{
+  color: #FE7B5D;
+}
+
+.hot-menu{
+  background: url('/img/background/background.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 563px;
+}
+
+.hot-menu-card{
+  background-color: white;
+  padding: 60px;
+
+  text-align: center;
+}
+
+.hot-menu-caption{
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hot-menu-caption::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FE7B5D;
+  bottom: 0;
+  transform-origin: center;
+}
+
+.names{
+  opacity: 60%;
+  user-select: none;
+}
+
+.readmore{
+  user-select: none;
+  text-decoration: underline;
+  opacity: 80%;
+}
+
+.carousel-control-next-blog, .carousel-control-prev-blog {
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-align: right;
+  background: 0 0;
+  border: 0;
+  opacity: .5;
+  transition: opacity .15s ease;
+}
+
+footer{
+  background-color: #FAFAFA;
+}
+
+.phone {
+  user-select: all;
+  pointer-events: none;
+}
+
+.footer-logo{
+  user-select: none;
+}
+
+.footer-conracts{
+  font-weight: 600;
+}
+
+.footer-categories-caption{
+  font-weight: bold;
+}
+
+.bi-caret-right-fill{
+  opacity: 10%;
+  margin-right: 5px;
+}
+
+.newsletter-inner{
+  opacity: 80%;
+}
+
+.fooner-imput{
+  border: 1px solid #FE7B5D;
+  width: 65%;
+}
+
+.fooner-imput, .btn-subscribe{
+  padding: 12px 8px;
+} 
+
+.btn-subscribe{
+  background-color: #FE7B5D;
+  color: white;
+  border: none;
+
+  width: 35%;
+}
+
+.line{
+  border-top: 1px solid;
+  opacity: 30%;
+}
+
+.about-us{
+  font-weight: 600;
+}
+
+.btn-social{
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: 0.6s;
+}
+
+.btn-social:hover{
+  background-color: #FE7B5D;
+  border:1px #FE7B5D solid;
+  color: white;
+}
+
+@media screen and (max-width: 1199px){
+  .fooner-imput{
+    width: 100%;
+  }
+  
+  .btn-subscribe{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .phone {
+    user-select: none;
+    pointer-events: auto;
+  }
+
+  h5{
+    font-size: 18px;
+  }
+
+  h4{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  h5{
+    font-size: 18px;
+  }
+
+  h4{
+    font-size: 24px;
+  }
+}
+
+
+@media screen and (max-width: 579px) {
+  .header-icons{
+    font-size: 20px;
+  }
+
+  h5{
+    font-size: 16px;
+  }
+
+  h4{
+    font-size: 22px;
+  }
+
+  .btn-outline-primary{
+    padding: 10px 30px 10px 30px;
+  }
+}

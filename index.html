@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="./libs/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header class="container">
+
+    <!-- Навигационная панель -->
+    <div class="navbar-Mazano d-none d-md-flex justify-content-between align-items-center">
+      <h1><a href="">Mazano.</a></h1>
+
+      <!-- Навигационные кнопки -->
+      <div class="nav">
+        <div class="px-3">
+          <a class="nav-line" href="">HOME</a>
+        </div>
+
+        <div class="px-3">
+          <a class="nav-line" href="">FRESH FOOD</a>
+        </div>
+
+        <div class="px-3">
+          <a class="nav-line" href="">SHOP</a>
+        </div>
+
+        <div class="px-3">
+          <a class="nav-line" href="">ABOUT</a>
+        </div>
+
+        <div class="px-3">
+          <a class="nav-line" href="">BLOG</a>
+        </div>
+      </div>
+
+      <div class="header-icons">
+        <a href=""><i class="bi bi-search me-2"></i></a>
+        <a href=""><i class="bi bi-person-circle me-2"></i></a>
+        <a href=""><i class="bi bi-bag"></i></a>
+      </div>
+  </div>
+
+  <!-- Шапка гамбургера -->
+  <div class=" d-block d-md-none mx-0">
+
+    <!-- Верхняя часть -->
+    <div class="row row-cols-3 align-items-center py-2">
+
+      <!-- Кнопка гамбургер -->
+      <div class="col">
+        <button class="btn-hamburger shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>  
+      </div>
+      
+      <div class="col">
+        <h1><a href="">Mazano.</a></h1>
+      </div>
+
+
+      <div class="col header-icons text-end">
+        <a href=""><i class="bi bi-search me-2"></i></a>
+        <a href=""><i class="bi bi-bag"></i></a>
+      </div>
+
+    </div>
+
+
+    <!-- Внутренности гамбургера -->
+    <div class="collapse" id="collapseExample">
+      
+      <!-- Навигационная панель гамбургера-->
+      <div class="hamburger-background">
+
+        <div class="pb-2">
+          <a class="nav-line" href="">HOME</a>
+        </div>
+
+        <div class="pb-2">
+          <a class="nav-line" href="">FRESH FOOD</a>                             
+        </div>
+
+        <div class="pb-2">
+          <a class="nav-line" href="">SHOP</a>                                
+        </div>
+
+        <div class="pb-2">
+          <a class="nav-line" href="">ABOUT</a>                               
+        </div>
+
+        <div class="pb-2">
+          <a class="nav-line" href="">BLOG</a>                                
+        </div>
+
+        <div class="pb-2">
+          <a class="nav-line" href="">ACCOUNT</a>                                
+        </div>
+
+      </div>
+    </div>
+  </div>  
+  
+</header>
+
+  <main>
+
+    <!--Слайдер-->
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Слайд 1 -->
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img class="img-fluid d-md-block d-none" src="./img/slider/banner1.png" alt="banner1">
+            <img class="img-fluid d-md-none d-block" src="./img/slider/banner1m.png" alt="banner1m">
+
+            <div class="carousel-caption d-flex align-items-center">
+              <div class="container text-start">
+                <div class="carousel-text-block">
+
+                  <div class="color-black">
+                    <h5>Let's solve hunger together with monthly offer</h5>
+                  </div>
+
+                  <div class="color-black">
+                    <h4>ORGANIC <br> PASTA & SAUCE</h4>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-outline-primary mt-lg-5 mt-md-5 mt-4">SHOP NOW</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Слайд 2 -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <img class="img-fluid d-md-block d-none" src="./img/slider/banner2.png" alt="banner2">
+            <img class="img-fluid d-md-none d-block" src="./img/slider/banner2m.png" alt="banner2m">
+
+            <div class="carousel-caption d-flex align-items-center">
+              <div class="container text-start">
+                <div class="carousel-text-block">
+
+                  <div class="color-black">
+                    <h5>We will help with proper nutrition</h5>
+                  </div>
+
+                  <div class="color-black">
+                    <h4>SUMMER SALAD</h4>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-outline-primary mt-5">SHOP NOW</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Слайд 3 -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <img class="img-fluid d-md-block d-none" src="./img/slider/banner3.png" alt="banner3">
+            <img class="img-fluid d-md-none d-block" src="./img/slider/banner3m.png" alt="banner3m">
+
+            <div class="carousel-caption d-flex align-items-center">
+              <div class="container text-start">
+                <div class="carousel-text-block">
+
+                  <div class="color-black">
+                    <h5>Choose what you like</h5>
+                  </div>
+
+                  <div class="color-black">
+                    <h4>LASAGNA <br> WITH TOMATO SAUCE</h4>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-outline-primary mt-lg-5 mt-md-5 mt-4">SHOP NOW</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопки слайдера -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+          <span class="bi bi-arrow-left-circle d-sm-block d-none" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+          <span class="bi bi-arrow-right-circle d-sm-block d-none" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="navbar-featured">
+      <div class="container ">
+        <div class="row align-items-center">
+
+          <div class="col-12 col-sm-6 col-xl-3 order-1">
+            <h2>FEATURED PRODUCT</h2>
+          </div>
+
+          <div class="col-12 col-xl-6 order-2 order-sm-3 order-xl-2 px-0">
+            <!-- Навигационные кнопки каталога -->
+            <div class="d-xl-flex">
+              <div class="py-3 py-xl-0 px-4 px-xl-2 px-xxl-3">
+                <a class="nav-line" href="">MEAT</a>
+              </div>
+
+              <div class="pb-3 pb-xl-0 px-4 px-xl-2 px-xxl-3">
+                <a class="nav-line" href="">FISH & SEAFOOD</a>
+              </div>
+
+              <div class="pb-3 pb-xl-0 px-4 px-xl-2 px-xxl-3">
+                <a class="nav-line" href="">VEGETABLES & SIDE DISHES</a>
+              </div>
+
+              <div class="pb-3 pb-xl-0 px-4 px-xl-2 px-xxl-3">
+                <a class="nav-line" href="">BREAD & DAIRY</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-3 order-3 order-sm-2 order-xl-2 d-flex justify-content-sm-end">
+            <button type="submit" class="btn-show-all">SHOW ALL ITEMS</button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <!-- Каталог -->
+    <div class="container mt-5 d-flex">
+      <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
+        
+        <!-- 1 -->
+        <div class="col">
+          <div class="card d-flex align-items-start flex-column">
+            <div>
+              <a class="w-100" href="#"><img src="./img/menu/1product.png" class="card-img-top img-fluid" alt="1product"></a>
+              <a href="" class="product pt-3"><p>SPAGHETTI</p></a>
+              <div class="price pt-1"><p>$85.00</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col">
+          <div class="card d-flex align-items-start flex-column">
+            <div>
+              <a class="w-100" href="#"><img src="./img/menu/2product.png" class="card-img-top img-fluid" alt="2product"></a>
+              <a href="" class="product pt-3"><p>TOMATO & BEANS</p></a>
+              <div class="price pt-1"><p>$125.00</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col">
+          <div class="card d-flex align-items-start flex-column">
+            <div>
+              <a class="w-100" href="#"><img src="./img/menu/3product.png" class="card-img-top img-fluid" alt="3product"></a>
+              <a href="" class="product pt-3"><p>STEAK WITH BBQ</p></a>
+              <div class="price pt-1"><p>$150.00</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col">
+          <div class="card d-flex align-items-start flex-column">
+            <div>
+              <a class="w-100" href="#"><img src="./img/menu/4product.png" class="card-img-top img-fluid" alt="4product"></a>
+              <a href="" class="product pt-3"><p>SALAD</p></a>
+              <div class="price pt-1"><p>$80.00</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col">
+          <div class="card d-flex align-items-start flex-column">
+            <div>
+              <a class="w-100" href="#"><img src="./img/menu/5product.png" class="card-img-top img-fluid" alt="5product"></a>
+              <a href="" class="product pt-3"><p>SALAD WITH BEANS</p></a>
+              <div class="price pt-1"><p>$25.00</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col">
+          <div class="card d-flex align-items-start flex-column">
+            <div>
+              <a class="w-100" href="#"><img src="./img/menu/6product.png" class="card-img-top img-fluid" alt="6product"></a>
+              <a href="" class="product pt-3"><p>ROUND NECK FROCK COAT</p></a>
+              <div class="price pt-1"><p>$95.00</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col">
+          <div class="card d-flex align-items-start flex-column">
+            <div>
+              <a class="w-100" href="#"><img src="./img/menu/7product.png" class="card-img-top img-fluid" alt="7product"></a>
+              <a href="" class="product pt-3"><p>SALAD WITH EGGS</p></a>
+              <div class="price pt-1"><p>$75.00</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col">
+          <div class="card d-flex align-items-start flex-column">
+            <div>
+              <a class="w-100" href="#"><img src="./img/menu/8product.png" class="card-img-top img-fluid" alt="8product"></a>
+              <a href="" class="product pt-3"><p>SALMON & SPAGHETTI</p></a>
+              <div class="price pt-1"><p>$200.00</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Карточка -->
+    <div class="hot-menu d-flex justify-content-center align-items-center mt-5 px-3">
+
+      <div class="hot-menu-card">
+        <p class="pt-3"><span class="hot-menu-caption">HOT MENU</span></p>
+        <h3 class="mt-4">LOREM IPSUM</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo esse perferendis illum ex nesciunt quidem!</p>
+
+        <button type="submit" class="btn-show-all my-4">ORDER NOW</button>
+      </div>
+
+    </div>
+
+    <!-- Слайдер (Блог)-->
+    <section class="container pb-5">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="my-5">FROM OUR BLOG</h2>
+          <div>
+            <!-- Кнопки слайдера -->
+            <button class="carousel-control-prev-blog" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+              <span class="bi bi-arrow-left-circle" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next-blog" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+              <span class="bi bi-arrow-right-circle" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-inner">
+
+          <!-- Слайд 1 -->
+          <div class="carousel-item active " data-bs-interval="5000000000">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="card d-flex align-items-start flex-column">
+                  <div>
+                    <a class="w-100" href=""><img src="./img/slider/blog1.png" class="img-fluid" alt="blog1"></a>
+                    <a href="" class="product pt-3"><span>FRESH FOOD FOR YOUR LIFE</span></a>
+                    <p class="names py-3">Christiana Doe / 18 comments</p>
+                    <a href=""><span class="readmore">READMORE</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card d-none d-md-flex align-items-start flex-column">
+                  <div>
+                    <a class="w-100" href=""><img src="./img/slider/blog2.png" class="img-fluid" alt="blog2"></a>
+                    <a href="" class="product pt-3"><span>MAZANO MULTI PURPOSE PSD TEMPLATE</span></a>
+                    <p class="names py-3">John Doe / 07 comments</p>
+                    <a href=""><span class="readmore">READMORE</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Слайд 2 -->
+          <div class="carousel-item " data-bs-interval="5000000000">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="card d-none d-md-flex align-items-start flex-column">
+                  <div>
+                    <a class="w-100" href=""><img src="./img/slider/blog1.png" class="img-fluid" alt="blog3"></a>
+                    <a href="" class="product pt-3"><span>FRESH FOOD FOR YOUR LIFE</span></a>
+                    <p class="names py-3">Christiana Doe / 18 comments</p>
+                    <a href=""><span class="readmore">READMORE</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card d-flex align-items-start flex-column">
+                  <div>
+                    <a class="w-100" href=""><img src="./img/slider/blog2.png" class="img-fluid" alt="blog4"></a>
+                    <a href="" class="product pt-3"><span>MAZANO MULTI PURPOSE PSD TEMPLATE</span></a>
+                    <p class="names py-3">John Doe / 07 comments</p>
+                    <a href=""><span class="readmore">READMORE</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-up" id="footer">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 pt-5">
+
+          <!-- Лого и контактная информация -->
+          <div class="col mb-5">
+            <div class="d-flex align-items-center">
+              <h3 class="footer-logo mb-4">Mazano.</h3>
+            </div>
+            <span>
+              Empor incididunt ut labore et dolore magna aliqua. <br>
+              Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco laboris
+            </span>
+            <div>
+              <a class="d-block phone my-3" href="tel:+79139170782"><i class="bi bi-telephone-fill me-3"></i><span class="footer-conracts">(123) 456 7890</span></a>
+              <a class="d-block mail" href="mailto:Support@mazano.com"><i class="bi bi-envelope me-3"></i><span class="footer-conracts">Support@mazano.com</span></a>
+            </div>
+          </div>
+
+          <!--  Категоии -->
+          <div class="col mb-5">
+            <p class="footer-categories-caption mb-4">CATEGORIES</p>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>Life Style</a>
+            </div>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>Lights & Lamps</a>
+            </div>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>Home Decor</a>
+            </div>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>Trernding 2016</a>
+            </div>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>Exterior</a>
+            </div>
+            
+          </div>
+
+          <div class="col mb-5">
+            <p class="footer-categories-caption mb-4">INFORMATION</p>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>Special</a>
+            </div>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>New Products</a>
+            </div>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>Best Sellers</a>
+            </div>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>Our Stores</a>
+            </div>
+
+            <div class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i>Contact</a>
+            </div>
+
+          </div>
+
+          <div class="сol mb-5">
+            <p class="footer-categories-caption mb-4">NEWSLETTER</p>
+
+            <span class="newsletter-inner">Sign up for our newsletter & promotions</span>
+
+            <form>
+              <div class="mt-3 mb-4 d-xl-flex">
+                <input class="fooner-imput" id="validation" type="email" name="email" placeholder="Email here" required/>
+                <button class="btn-subscribe">SUBSCRIBE</button>
+              </div>
+            </form>
+            
+
+            <div>
+              <p class="footer-categories-caption">WE ACCEPT</p>
+              <img src="./img/Payments.png" class="mt-3 img-fluid" alt="Payments">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container line mb-3"></div>
+      
+      <div class="footer-down container mb-3">
+        <div class="row">
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="about-us me-3">© 2021 Mazano Fresh food</div>
+            <button class="btn-social me-2" type="button"><i class="bi bi-facebook"></i></button>
+            <button class="btn-social me-2" type="button"><i class="bi bi-twitter"></i></button>
+            <button class="btn-social" type="button"><i class="bi bi-instagram"></i></button>
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex justify-content-lg-end">
+            <a href=""><p class="pe-2">About Us</p></a>
+            <a href=""><p class="px-2">Customer Services</p></a>
+            <a href=""><p class="px-2">Term & Conditions</p></a>
+          </div>
+        </div>
+
+        
+      </div>
+
+    </footer>
+
+  </main>
+
+  <script src="./libs/bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

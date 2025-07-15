@@ -224,8 +224,9 @@ a:hover{
 .hot-menu-card{
   background-color: white;
   padding: 60px;
-
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .hot-menu-caption{
@@ -353,6 +354,11 @@ footer{
     pointer-events: auto;
   }
 
+  .hot-menu {
+    height: auto;
+    padding: 60px 0;
+  }
+
   h5{
     font-size: 18px;
   }
@@ -369,6 +375,10 @@ footer{
 
   h4{
     font-size: 24px;
+  }
+
+  .hot-menu-card{
+    padding: 40px;
   }
 }
 
@@ -388,5 +398,9 @@ footer{
 
   .btn-outline-primary{
     padding: 10px 30px 10px 30px;
+  }
+
+  .hot-menu-card{
+    padding: 30px;
   }
 }
